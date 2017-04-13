@@ -1,3 +1,4 @@
+# coding=utf-8
 import json
 
 from random import random
@@ -6,29 +7,44 @@ from flask import request, Flask
 
 app = Flask(__name__)
 
-token = 'EAAZAN5XZBKMSUBAL0QZCjHyhl3OqAGwcoE4kZAQiGowvjQWYk5ROIcsD2mhnBgfvb0YNoPxaOr9C4AOhuPGV9zEy3ZCpekxkPW5jcYZAySKfMLDbQqlQrT3t6roRfz9l2cBFfmyvLM9naO2xOfZBNruVuWoTZCvlyZBwZBa6BmkDOYHwZDZD'  # noqa
+token = 'EAAGAJhMhKRABAFbFsT55sDbAfalbtB2ZCZCbEzxZARGZBGVgARFTslOfQGTCLmIWV1zN7KbUY2qezIGmrobdbA2HkCvKo7gerksQbXhKpkhgteqCZA3R98M0XFZAwZCHdO7F2hUaRkxT9elEqF7NyqRFmaEP0g1dZA4IJsWfmX5tTwZDZD'  # noqa
 
 
 @app.route('/receive', methods=['GET'])
 def serve():
     if (
         request.args.get('hub.mode') == 'subscribe' and
-        request.args.get('hub.verify_token') == 'koushik'
+        request.args.get('hub.verify_token') == 'moo'
     ):
         return request.args.get('hub.challenge')
-    return 'fuck_you'
+    return 'arimooster'
 
 
 koush_resps = [
-    'sleep is boring -- {inbound_msg} is better',
-    '{inbound_msg} this',
-    'whips out {inbound_msg}',
-    'YAAAAS {inbound_msg} YAAAAAAS',
-    'Hello!!!',
-    '{inbound_msg} this: whips out financial crisis of 2008',
-    'naaaaaaaas',
-    'wooow TFTI TO {inbound_msg}',
-    'uguuu'
+    "🐮s are social animals, and they naturally form large herds. And like people, they will make friends and bond to some herd members, while avoiding others",
+    "🐮s are red-green colorblind. In a bullfight, its the waving of the cape that attracts the bull not the red color",
+    "A 🐮's heart beats between 60 and 70 beats per minute",
+    "🐮s can hear lower and higher frequencies better than humans.",
+    "An average dairy 🐮 weighs about 1,200 pounds.",
+    "A 🐮s normal body temperature is 101.5°F.",
+    "The average 🐮 chews at least 50 times per minute.",
+    "The typical 🐮 stands up and sits down about 14 times a day.",
+    "An average 🐮 has more than 40,000 jaw movements in a day.",
+    "🐮s actually do not bite grass; instead they curl their tongue around it.",
+    "🐮s have almost total 360-degree panoramic vision.",
+    "🐮s have a single stomach, but four different digestive compartments.",
+    "🐮s are pregnant for 9 months just like people",
+    "A dairy 🐮 can produce 125 lbs. of saliva a day",
+    "🐮s spend 8 hours per day eating, 8 hours chewing her cud (regurgitated, partially digested food), and 8 hours sleeping",
+    "You can lead a 🐮 upstairs, but not downstairs. 🐮s knees can't bend properly to walk downstairs.",
+    "🐮s can't vomit",
+    "The average 🐮 drinks 30 to 50 gallons of water each day",
+    "The average 🐮 produces 70 lbs. of milk. That's 8 gallons per day!",
+    "🐮s only have teeth on the bottom",
+    "🐮s have a great sense of smell. They can smell something up to 6 miles away",
+    "Dairy 🐮s are economic job creating machines! 1 dairy 🐮 creates 4 full time jobs in the local community",
+    "A Holstein's spots are like a fingerprint. No two 🐮s have exactly the same pattern of black and white spots. They are all different",
+    "The average 🐮 will eat about 100 lbs. of feed per day",
 ]
 
 
