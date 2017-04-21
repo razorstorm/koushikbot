@@ -20,7 +20,7 @@ def serve():
     return 'arimooster'
 
 
-koush_resps = [
+mooster_resps = [
     "🐮s are social animals, and they naturally form large herds. And like people, they will make friends and bond to some herd members, while avoiding others",
     "🐮s are red-green colorblind. In a bullfight, its the waving of the cape that attracts the bull not the red color",
     "A 🐮's heart beats between 60 and 70 beats per minute",
@@ -45,6 +45,19 @@ koush_resps = [
     "Dairy 🐮s are economic job creating machines! 1 dairy 🐮 creates 4 full time jobs in the local community",
     "A Holstein's spots are like a fingerprint. No two 🐮s have exactly the same pattern of black and white spots. They are all different",
     "The average 🐮 will eat about 100 lbs. of feed per day",
+    "Like humans, 🐮s (🐮s) form close friendships and choose to spend much of their time with 2-4 preferred individuals. They also hold grudges for years and may dislike particular individuals.",
+    "🐮s display emotions and have been shown to produce more milk when they are treated better and as individuals.",
+    "🐮s get excited when they solve problems. When faced with the challenge of trying find out how to open a door to reach food, their heartbeats went up, their brainwaves showed excitement, and some even jumped into the air.",
+    "🐮s show their excitement when let out into a field after long periods confined indoors.",
+    "🐮s like to sleep close to their families, and sleeping arrangements are determined by individuals’ rank in the social hierarchy.",
+    "🐮s are devotional mothers and are known to walk for miles to find their calves.",
+    "🐮s are extremely curious and inquisitive animals which will investigate everything.",
+    "Like many other grazing animals 🐮s have one stomach which is divided into four compartments or chambers: the rumen, reticulum, omasum and abomasum. This allows them to digest grain and grasses most effectively.",
+    "🐮s have almost 360° panoramic vision. This helps them to see predators coming from any direction.",
+    "🐮s have an excellent sense of smell. They can detect odours up to five miles away. They can also hear both low and high frequency sounds beyond human capability.",
+    "The 🐮 is a protected animal in Hinduism, and Hindus do not eat beef. 🐮s are honoured at least once a year, on Gopastami. On this day 🐮s are washed and decorated in temples.",
+    "Mahatma Ghandi described a 🐮 as “a poem of compassion”, also stating that “I worship the 🐮 and I shall defend its worship against the whole world”.",
+    "The meat of 🐮s is widely eaten by people across the world. 🐮s’ milk is also drunk and used to make other products such as cheese and butter. Many people who consume animal products would like to choose products from animals kept in higher welfare systems. The majority of 🐮s farmed across the world are reared in intensive farming systems which can cause them to suffer greatly.",
 ]
 
 
@@ -58,14 +71,16 @@ def receive():
             for message in entry['messaging']:
                 sender = message['sender']['id']
                 content = message['message']['text']
-                koush_resp = koush_resps[int(random() * len(koush_resps))].format(inbound_msg=content)  # noqa
+                mooster_resp = mooster_resps[
+                    int(random() * len(mooster_resps))
+                ].format(inbound_msg=content)
 
                 resp_msg = {
                     'recipient': {
                         'id': sender,
                     },
                     'message': {
-                        'text': koush_resp,
+                        'text': mooster_resp,
                     },
                 }
 
