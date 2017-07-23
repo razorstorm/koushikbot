@@ -60,7 +60,6 @@ def receive():
         for entry in data['entry']:
             for message in entry['messaging']:
                 sender = message['sender']['id']
-                content = message['message']['text']
 
                 resp_msg = {
                     'recipient': {
