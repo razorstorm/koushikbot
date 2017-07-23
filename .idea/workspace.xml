@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8307dc25-a01a-4e68-ba8d-00d5e8e23969" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ari_parsed_text.txt" afterPath="$PROJECT_DIR$/ari_parsed_text.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatbot_handler.py" afterPath="$PROJECT_DIR$/chatbot_handler.py" />
     </list>
     <ignored path="moosterbot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,14 +23,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="chatbot_handler.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="chatbot_handler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chatbot_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            <state relative-caret-position="301">
+              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
               <folding>
                 <element signature="e#15#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__builtin__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.1/python_stubs/-2125986627/__builtin__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="5138" column="8" lean-forward="false" selection-start-line="5138" selection-start-column="8" selection-end-line="5138" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,21 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ari_parsed_text.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ari_parsed_text.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ari_parsed_text.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="845">
               <caret line="1206" column="0" lean-forward="true" selection-start-line="1206" selection-start-column="0" selection-end-line="1206" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="asdf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/asdf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="227" column="13" lean-forward="false" selection-start-line="227" selection-start-column="13" selection-end-line="227" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -143,6 +143,7 @@
       <find>am</find>
       <find>\n\n</find>
       <find>state_size</find>
+      <find>xrange</find>
     </findStrings>
     <replaceStrings>
       <replace>\n</replace>
@@ -161,8 +162,8 @@
         <option value="$PROJECT_DIR$/arianalyser.txt" />
         <option value="$PROJECT_DIR$/arianalyser.py" />
         <option value="$PROJECT_DIR$/cows.py" />
-        <option value="$PROJECT_DIR$/chatbot_handler.py" />
         <option value="$PROJECT_DIR$/ari_parsed_text.txt" />
+        <option value="$PROJECT_DIR$/chatbot_handler.py" />
       </list>
     </option>
   </component>
@@ -487,21 +488,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatbot_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding>
-            <element signature="e#15#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ari_parsed_text.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="845">
           <caret line="1206" column="0" lean-forward="true" selection-start-line="1206" selection-start-column="0" selection-end-line="1206" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.1/python_stubs/-2125986627/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="5138" column="8" lean-forward="false" selection-start-line="5138" selection-start-column="8" selection-end-line="5138" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbot_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="e#15#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

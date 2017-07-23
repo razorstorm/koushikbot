@@ -30,7 +30,7 @@ def generate_ari_speech():
         text = f.read()
 
     text_models = []
-    for i in xrange(3):
+    for i in range(3):
         # Build the models
         text_models.append(markovify.Text(text, state_size=i))
 
