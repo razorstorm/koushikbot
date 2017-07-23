@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8307dc25-a01a-4e68-ba8d-00d5e8e23969" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatbot_handler.py" afterPath="$PROJECT_DIR$/chatbot_handler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markov_chain.py" afterPath="$PROJECT_DIR$/markov_chain.py" />
     </list>
     <ignored path="moosterbot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +26,8 @@
       <file leaf-file-name="chatbot_handler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chatbot_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="83" column="40" lean-forward="true" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
+            <state relative-caret-position="206">
+              <caret line="82" column="95" lean-forward="false" selection-start-line="82" selection-start-column="95" selection-end-line="82" selection-end-column="95" />
               <folding>
                 <element signature="e#15#26#0" expanded="true" />
               </folding>
@@ -51,8 +50,8 @@
       <file leaf-file-name="text.py" pinned="false" current-in-tab="false">
         <entry file="file:///Library/Python/2.7/site-packages/markovify/text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="136" column="33" lean-forward="false" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="33" />
+            <state relative-caret-position="446">
+              <caret line="176" column="27" lean-forward="false" selection-start-line="176" selection-start-column="8" selection-end-line="176" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -344,18 +343,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/markovify/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="136" column="33" lean-forward="false" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/markovify/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="176" column="27" lean-forward="false" selection-start-line="176" selection-start-column="8" selection-end-line="176" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -372,8 +371,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chatbot_handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="83" column="40" lean-forward="true" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
+        <state relative-caret-position="206">
+          <caret line="82" column="95" lean-forward="false" selection-start-line="82" selection-start-column="95" selection-end-line="82" selection-end-column="95" />
           <folding>
             <element signature="e#15#26#0" expanded="true" />
           </folding>

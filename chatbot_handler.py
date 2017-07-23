@@ -1,5 +1,7 @@
 # coding=utf-8
 import json
+import random
+
 import markovify
 import numpy as np
 
@@ -75,7 +77,10 @@ def generate_ari_speech():
     sentences = []
     print num_sentences
     for i in range(num_sentences):
-        sentences.append(text_model.make_sentence(tries=1000))
+        if bool(random.getrandbits(1)):
+            sentences.append(text_model.make_sentence(tries=1000))
+        else:
+            sentences.append(text_model.make_short_sentence(max_chars=140, min_chars=10, tries=1000))
 
     sentences = " ".join(sentences)
 
