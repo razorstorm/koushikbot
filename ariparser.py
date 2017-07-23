@@ -1,4 +1,4 @@
-fh = open("aritext.txt", "r")
+fh = open("ariseed2.txt", "r")
 contents = fh.readlines()
 
 ari_turn = False
