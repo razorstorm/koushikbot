@@ -1,5 +1,6 @@
 # coding=utf-8
 import json
+import markovify
 
 from random import random
 import requests
@@ -60,27 +61,45 @@ mooster_resps = [
     "The meat of 🐮s is widely eaten by people across the world. 🐮s’ milk is also drunk and used to make other products such as cheese and butter. Many people who consume animal products would like to choose products from animals kept in higher welfare systems. The majority of 🐮s farmed across the world are reared in intensive farming systems which can cause them to suffer greatly.",
 ]
 
+def generate_ari_speech():
+    # Get raw text as string.
+    with open("ari_parsed_text.txt") as f:
+        text = f.read()
+
+    # Build the model.
+    text_model = markovify.Text(text)
+
+    # Print five randomly-generated sentences
+    num_sentences = max(1, int(round(np.random.normal(3, 2, 1)[0], 0)))
+
+    sentences = []
+    print num_sentences
+    for i in range(num_sentences):
+        sentences.append(text_model.make_sentence(tries=1000))
+
+    sentences = " ".join(sentences)
+
+    return sentences
 
 @app.route('/receive', methods=['POST'])
 def receive():
     print(request.data)
     data = json.loads(request.data)
 
+    sentences = generate_ari_speech()
+
     try:
         for entry in data['entry']:
             for message in entry['messaging']:
                 sender = message['sender']['id']
                 content = message['message']['text']
-                mooster_resp = mooster_resps[
-                    int(random() * len(mooster_resps))
-                ].format(inbound_msg=content)
 
                 resp_msg = {
                     'recipient': {
                         'id': sender,
                     },
                     'message': {
-                        'text': mooster_resp,
+                        'text': sentences,
                     },
                 }
 
