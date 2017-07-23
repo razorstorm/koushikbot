@@ -3,7 +3,6 @@ import json
 import markovify
 import numpy as np
 
-from random import random
 import requests
 from flask import request, Flask
 
@@ -71,7 +70,7 @@ def generate_ari_speech():
     text_model = markovify.Text(text)
 
     # Print five randomly-generated sentences
-    num_sentences = max(1, int(round(np.random.normal(3, 2, 1)[0], 0)))
+    num_sentences = max(1, int(round(np.random.normal(2, 1, 1)[0], 0)))
 
     sentences = []
     print num_sentences
