@@ -31,15 +31,17 @@ def generate_ari_speech():
 
     text_models = []
     for i in xrange(3):
-        # Build the model.
-        text_model = markovify.Text(text, state_size=i)
+        # Build the models
+        text_models.append(markovify.Text(text, state_size=i))
 
-    # Print five randomly-generated sentences
+    # Use a random distribution to figure out how many sentences to generate
     num_sentences = max(1, int(round(np.random.normal(1, 0.5, 1)[0], 0)))
 
     sentences = []
     for i in range(num_sentences):
+        # Make a random choice on which model to use
         chosen_text_model = text_models[random.randint(0, 2)]
+        # Generate sentences of half average length to 8x average length
         sentences.append(chosen_text_model.make_short_sentence(max_chars=ARI_TEXT_AVERAGE_LENGTH*8, min_chars=ARI_TEXT_AVERAGE_LENGTH/2, tries=1000))
 
     sentences = " ".join(sentences)
