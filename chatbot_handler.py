@@ -1,6 +1,7 @@
 # coding=utf-8
 import json
 import markovify
+import numpy as np
 
 from random import random
 import requests
