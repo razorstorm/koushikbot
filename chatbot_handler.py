@@ -42,7 +42,10 @@ def generate_ari_speech():
         # Make a random choice on which model to use
         chosen_text_model = text_models[random.randint(0, 2)]
         # Generate sentences of half average length to 8x average length
-        sentences.append(chosen_text_model.make_short_sentence(max_chars=ARI_TEXT_AVERAGE_LENGTH*8, min_chars=ARI_TEXT_AVERAGE_LENGTH/2, tries=1000))
+        sentence = chosen_text_model.make_short_sentence(max_chars=ARI_TEXT_AVERAGE_LENGTH*8, min_chars=ARI_TEXT_AVERAGE_LENGTH/2, tries=1000)
+        if sentence[-1] not in {'.', '?', '!'}:
+            sentence += '.'
+        sentences.append(sentence)
 
     sentences = " ".join(sentences)
 
